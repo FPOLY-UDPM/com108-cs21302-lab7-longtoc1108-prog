@@ -16,7 +16,7 @@
 
 int main() {
     char str[100];
-    int vowel_count = 0, consonant_count = 0;
+    int Nguyenam = 0, Phuam = 0;
 
     printf("Nhap vao mot chuoi: ");
     fgets(str, sizeof(str), stdin);
@@ -26,15 +26,16 @@ int main() {
         char ch = str[i];
         if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
             ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
-            vowel_count++;
+            Nguyenam++;
         } else if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) {
-            consonant_count++;
+            Phuam++;
         }
     }
 
-    printf("So luong nguyen am: %d\n", vowel_count);
-    printf("So luong phu am: %d\n", consonant_count);
+    printf("So luong nguyen am: %d\n", Nguyenam);
+    printf("So luong phu am: %d\n", Phuam);
 
     return 0;
 }
+
 
